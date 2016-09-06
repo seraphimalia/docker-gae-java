@@ -9,5 +9,4 @@ RUN apt-get -y install unzip
 RUN mkdir -p /usr/share/appengine-sdk
 RUN unzip -q -d /usr/share/appengine-sdk/ /tmp/appengine-java-sdk-1.9.42.zip
 ENV PATH "$PATH:/usr/share/appengine-sdk/$APPENGINE_SDK/bin"
-RUN ln -s /usr/share/appengine-sdk/$APPENGINE_SDK/bin/appcfg.sh /usr/bin/appcfg.sh
 CMD ["appcfg.sh]
